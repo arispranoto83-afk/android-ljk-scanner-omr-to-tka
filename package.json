@@ -1,0 +1,21 @@
+{
+  "name": "scanner-ljk-omr",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Scanner LJK OMR - APK Android (Capacitor)",
+  "scripts": {
+    "prepare:web": "node scripts/prepare.mjs",
+    "android:add": "npx cap add android && node scripts/patch-android.mjs && npx cap sync android",
+    "android:build": "cd android && ./gradlew assembleDebug"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/core": "^7.0.0",
+    "@capacitor/filesystem": "^7.0.0",
+    "@capacitor/share": "^7.0.0",
+    "xlsx": "0.18.5"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.0.0"
+  }
+}
